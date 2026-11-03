@@ -1,757 +1,437 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-        content="Portfólio profissional de Willians de Jesus Freitas, estudante de Análise e Desenvolvimento de Sistemas com formação em Administração e experiência administrativa e comercial.">
-
-    <title>Willians de Jesus Freitas | Portfólio</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gestor Comercial Panamby</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="multiuser.css">
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
 </head>
-
 <body>
-
-    <nav class="navbar">
-
-        <div class="nav-container">
-
-            <a href="#inicio" class="logo">
-                Willians<span>.</span>
-            </a>
-
-            <div class="nav-links">
-                <a href="#sobre">Sobre</a>
-                <a href="#formacao">Formação</a>
-                <a href="#habilidades">Habilidades</a>
-                <a href="#experiencia">Experiência</a>
-                <a href="#feiras">Feiras</a>
-                <a href="#projetos">Projetos</a>
-                <a href="#documentos">Documentos</a>
-                <a href="#certificados">Certificados</a>
-                <a href="#contato">Contato</a>
-            </div>
-
-        </div>
-
-    </nav>
-
-
-    <header class="hero" id="inicio">
-
-        <div class="hero-container">
-
-            <img
-                src="img/willians.png"
-                alt="Foto profissional de Willians de Jesus Freitas"
-                class="foto"
-            >
-
-            <p class="apresentacao">
-                Olá, eu sou
-            </p>
-
-            <h1>
-                Willians de Jesus Freitas
-            </h1>
-
-            <p class="cargo">
-                Administração | Análise e Desenvolvimento de Sistemas
-            </p>
-
-            <p class="descricao">
-                Profissional formado em Administração, com experiência
-                nas áreas administrativa, comercial e atendimento ao cliente,
-                atualmente cursando Análise e Desenvolvimento de Sistemas.
-            </p>
-
-            <p class="descricao descricao-secundaria">
-                Tenho interesse em desenvolvimento web, programação,
-                banco de dados, análise de dados e soluções tecnológicas.
-            </p>
-
-            <div class="botoes">
-
-                <a
-                    href="https://www.linkedin.com/in/willians-de-jesus-freitas-946a21186/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="btn"
-                >
-                    LinkedIn
-                </a>
-
-                <a
-                    href="https://wa.me/5511953627423?text=Olá%20Willians!%20Vi%20seu%20portfólio."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="btn btn-whatsapp"
-                >
-                    WhatsApp
-                </a>
-
-            </div>
-
-        </div>
-
-    </header>
-
-
-    <section id="sobre">
-
-        <div class="container">
-
-            <span class="section-tag">
-                Perfil profissional
-            </span>
-
-            <h2>
-                👨‍💻 Sobre Mim
-            </h2>
-
-            <div class="sobre-conteudo">
-
-                <p>
-                    Sou formado em Administração e atualmente curso
-                    Análise e Desenvolvimento de Sistemas.
-                </p>
-
-                <p>
-                    Possuo experiência profissional nas áreas administrativa,
-                    comercial e de atendimento ao cliente, além de participação
-                    em feiras e eventos representando empresas do setor.
-                </p>
-
-                <p>
-                    Atualmente estou direcionando meu desenvolvimento
-                    profissional para a área de tecnologia, ampliando
-                    meus conhecimentos em programação, desenvolvimento
-                    web, banco de dados e análise de dados.
-                </p>
-
-                <p>
-                    Busco oportunidades que permitam aplicar meus
-                    conhecimentos, participar de projetos reais e
-                    continuar evoluindo profissionalmente.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section class="bg" id="formacao">
-
-        <div class="container">
-
-            <span class="section-tag">
-                Educação
-            </span>
-
-            <h2>
-                🎓 Formação Acadêmica
-            </h2>
-
-            <div class="grid">
-
-                <div class="card">
-
-                    <div class="card-icon">
-                        💻
-                    </div>
-
-                    <h3>
-                        Universidade Cruzeiro do Sul
-                    </h3>
-
-                    <p>
-                        Análise e Desenvolvimento de Sistemas
-                    </p>
-
-                    <p class="status">
-                        Cursando
-                    </p>
-
-                </div>
-
-
-                <div class="card">
-
-                    <div class="card-icon">
-                        📚
-                    </div>
-
-                    <h3>
-                        UNIP
-                    </h3>
-
-                    <p>
-                        Administração
-                    </p>
-
-                    <p class="status status-concluido">
-                        Graduação concluída
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section id="habilidades">
-
-        <div class="container">
-
-            <span class="section-tag">
-                Conhecimentos
-            </span>
-
-            <h2>
-                🚀 Habilidades
-            </h2>
-
-            <div class="skills">
-
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>C#</span>
-                <span>Excel</span>
-                <span>Git</span>
-                <span>GitHub</span>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section class="bg" id="experiencia">
-
-        <div class="container">
-
-            <span class="section-tag">
-                Carreira
-            </span>
-
-            <h2>
-                💼 Experiência Profissional
-            </h2>
-
-            <div class="grid">
-
-                <div class="card">
-
-                    <h3>
-                        Panamby Plásticos
-                    </h3>
-
-                    <p class="cargo-card">
-                        Vendedor
-                    </p>
-
-                    <p>
-                        Atuação no setor comercial, atendimento a clientes,
-                        acompanhamento de pedidos, relacionamento com
-                        representantes e suporte às atividades relacionadas
-                        ao processo de vendas.
-                    </p>
-
-                </div>
-
-
-                <div class="card">
-
-                    <h3>
-                        Sindicato dos Correios
-                    </h3>
-
-                    <p class="cargo-card">
-                        Auxiliar Administrativo
-                    </p>
-
-                    <p>
-                        Suporte às rotinas administrativas, organização
-                        de documentos, atendimento e apoio às atividades
-                        internas.
-                    </p>
-
-                </div>
-
-
-                <div class="card">
-
-                    <h3>
-                        Clínica Vera Cruz
-                    </h3>
-
-                    <p class="cargo-card">
-                        Auxiliar Administrativo
-                    </p>
-
-                    <p>
-                        Atendimento, organização de informações
-                        e apoio às atividades administrativas.
-                    </p>
-
-                </div>
-
-
-                <div class="card">
-
-                    <h3>
-                        Hospital das Clínicas
-                    </h3>
-
-                    <p class="cargo-card">
-                        Jovem Aprendiz
-                    </p>
-
-                    <p>
-                        Apoio administrativo, organização de documentos
-                        e suporte às rotinas internas.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section id="feiras">
-
-        <div class="container">
-
-            <span class="section-tag">
-                Experiência de mercado
-            </span>
-
-            <h2>
-                🤝 Feiras & Eventos Profissionais
-            </h2>
-
-            <p class="texto-central">
-                Participação em feiras do setor de utilidades e artigos
-                para o lar, representando a empresa em ações comerciais,
-                relacionamento com clientes e apresentação de produtos.
-            </p>
-
-
-            <div class="feiras-wrapper">
-
-                <div class="feira-imagem">
-
-                    <img
-                        src="img/feiras.jpg"
-                        alt="Credenciais de participação em feiras profissionais"
-                    >
-
-                </div>
-
-
-                <div class="feiras-conteudo">
-
-                    <div class="feira-card">
-
-                        <div class="feira-topo">
-
-                            <span class="feira-icon">
-                                🏢
-                            </span>
-
-                            <div>
-
-                                <h3>
-                                    AB Casa Fair
-                                </h3>
-
-                                <p class="feira-tag">
-                                    Participação profissional
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                        <p>
-                            Participação em feira voltada ao setor de casa,
-                            decoração e utilidades, ampliando o contato com
-                            clientes, fornecedores e profissionais do mercado.
-                        </p>
-
-                        <div class="feira-detalhes">
-
-                            <span>🤝 Networking</span>
-                            <span>📦 Produtos</span>
-                            <span>📈 Mercado</span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="feira-card">
-
-                        <div class="feira-topo">
-
-                            <span class="feira-icon">
-                                🎪
-                            </span>
-
-                            <div>
-
-                                <h3>
-                                    Show Util
-                                </h3>
-
-                                <p class="feira-tag">
-                                    Participação como expositor
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                        <p>
-                            Participação representando a empresa como expositor,
-                            com atuação no atendimento a visitantes, apresentação
-                            de produtos, relacionamento comercial e fortalecimento
-                            da presença da marca durante o evento.
-                        </p>
-
-                        <div class="feira-detalhes">
-
-                            <span>🗣️ Atendimento</span>
-                            <span>🛍️ Apresentação</span>
-                            <span>💼 Comercial</span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section class="bg" id="projetos">
-
-        <div class="container">
-
-            <span class="section-tag">
-                Desenvolvimento
-            </span>
-
-            <h2>
-                📂 Projetos
-            </h2>
-
-            <div class="grid">
-
-                <div class="card projeto">
-
-                    <div class="card-icon">
-                        🌐
-                    </div>
-
-                    <h3>
-                        Portfólio Profissional
-                    </h3>
-
-                    <p>
-                        Site pessoal responsivo desenvolvido utilizando
-                        HTML, CSS e JavaScript para apresentar formação,
-                        experiência, projetos e qualificações profissionais.
-                    </p>
-
-                    <div class="tecnologias">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-
-                </div>
-
-
-                <div class="card projeto">
-
-                    <div class="card-icon">
-                        📊
-                    </div>
-
-                    <h3>
-                        Dashboard Comercial
-                    </h3>
-
-                    <p>
-                        Projeto voltado para análise de indicadores,
-                        desempenho de vendas e acompanhamento de metas
-                        comerciais.
-                    </p>
-
-                    <div class="tecnologias">
-                        <span>Excel</span>
-                        <span>Power BI</span>
-                    </div>
-
-                </div>
-
-
-                <div class="card projeto">
-
-                    <div class="card-icon">
-                        💻
-                    </div>
-
-                    <h3>
-                        Sistema de Cadastro
-                    </h3>
-
-                    <p>
-                        Projeto acadêmico criado para cadastro,
-                        organização e gerenciamento de informações.
-                    </p>
-
-                    <div class="tecnologias">
-                        <span>C#</span>
-                        <span>Banco de Dados</span>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section id="documentos">
-
-        <div class="container">
-
-            <span class="section-tag">
-                Documentação
-            </span>
-
-            <h2>
-                📑 Documentos Profissionais
-            </h2>
-
-            <div class="grid documentos-grid">
-
-                <div class="card documento-card">
-
-                    <div class="documento-icon">
-                        🎓
-                    </div>
-
-                    <h3>
-                        Diploma
-                    </h3>
-
-                    <p>
-                        Documento relacionado à minha formação acadêmica.
-                    </p>
-
-                    <a
-                        href="documentos/diploma.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn"
-                    >
-                        Visualizar Diploma
-                    </a>
-
-                </div>
-
-
-                <div class="card documento-card">
-
-                    <div class="documento-icon">
-                        📄
-                    </div>
-
-                    <h3>
-                        Carta de Recomendação
-                    </h3>
-
-                    <p>
-                        Documento de recomendação referente à minha
-                        experiência profissional.
-                    </p>
-
-                    <a
-                        href="documentos/carta-recomendacao.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="btn"
-                    >
-                        Visualizar Carta
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section class="bg" id="certificados">
-
-        <div class="container">
-
-            <span class="section-tag">
-                Qualificações
-            </span>
-
-            <h2>
-                🏆 Certificados
-            </h2>
-
-            <p class="texto-central">
-                Confira minhas certificações, cursos e qualificações
-                profissionais reunidos em um único documento.
-            </p>
-
-
-            <div class="certificado-unico">
-
-                <div class="certificado-destaque">
-
-                    <div class="certificado-icon-grande">
-                        🏆
-                    </div>
-
-
-                    <div class="certificado-info">
-
-                        <span class="certificado-label">
-                            Formação Complementar
-                        </span>
-
-                        <h3>
-                            Certificados e Qualificações
-                        </h3>
-
-                        <p>
-                            Documento completo contendo certificados de
-                            cursos e qualificações nas áreas de tecnologia,
-                            administração, informática, desenvolvimento
-                            profissional e negócios.
-                        </p>
-
-
-                        <div class="certificado-detalhes">
-
-                            <span>📚 Cursos</span>
-                            <span>💻 Tecnologia</span>
-                            <span>📈 Desenvolvimento</span>
-
-                        </div>
-
-
-                        <a
-                            href="certificados/certificados-willians.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="btn-certificado"
-                        >
-                            📄 Visualizar todos os certificados
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section class="contato" id="contato">
-
-        <div class="container">
-
-            <span class="section-tag">
-                Vamos conversar?
-            </span>
-
-            <h2>
-                📞 Contato
-            </h2>
-
-            <p>
-                Interessado em conhecer melhor meu trabalho ou conversar
-                sobre oportunidades profissionais?
-            </p>
-
-            <div class="contato-botoes">
-
-                <a
-                    class="zap"
-                    href="https://wa.me/5511953627423?text=Olá%20Willians!%20Vi%20seu%20portfólio."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Falar no WhatsApp
-                </a>
-
-
-                <a
-                    class="linkedin-contato"
-                    href="https://www.linkedin.com/in/willians-de-jesus-freitas-946a21186/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Ver LinkedIn
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <footer>
-
-        <p id="ano"></p>
-
-        <p class="footer-texto">
-            Desenvolvido com HTML, CSS e JavaScript.
-        </p>
-
-    </footer>
-
-
-    <script src="script.js"></script>
-
+<div class="app">
+<aside>
+  <h1>📈 Gestor Comercial</h1>
+  <p>Clientes • Vendas • Follow-ups • Metas</p>
+
+  <button class="nav active" data-tab="dashboard">📊 Dashboard</button>
+  <button class="nav" data-tab="clientes">👥 Clientes</button>
+  <button class="nav" data-tab="pipeline">🗂️ Pipeline Comercial</button>
+  <button class="nav" data-tab="followups">📞 Follow-ups / Alarmes</button>
+  <button class="nav" data-tab="apuracao">📋 Apuração de Metas</button>
+  <button class="nav" data-tab="excel">📗 Excel / Backup</button>
+</aside>
+
+<main>
+<header>
+  <div>
+    <h2 id="pageTitle">Dashboard</h2>
+    <small id="todayLabel"></small><br>
+    <small class="version">V36 DASHBOARD + PIPELINE SEPARADOS • 2026.09.03</small>
+  </div>
+  <button class="primary" onclick="enableNotifications()">🔔 Ativar alertas e som</button>
+</header>
+
+<section id="dashboard" class="tab active">
+  <div class="card filters">
+    <div><label>Data inicial</label><input type="date" id="dashInicio"></div>
+    <div><label>Data final</label><input type="date" id="dashFim"></div>
+    <div><label>Representante</label><select id="dashRep"><option value="">Todos</option></select></div>
+    <div><label>Região</label><select id="dashRegiao"><option value="">Todas</option><option>Sudeste</option><option>Sul</option><option>Nordeste</option><option>Centro-Oeste</option><option>Norte</option><option>Não informado</option></select></div>
+    <div><label>Valor dos gráficos</label><select id="dashMetric"><option value="sem">Sem impostos</option><option value="liq">Valor líquido</option></select></div>
+    <button class="primary" onclick="renderDashboard()">Atualizar dashboard</button>
+  </div>
+
+  <div class="live-strip">
+    <div class="live-badge">● AO VIVO</div>
+    <div class="ticker-window">
+      <div class="ticker-track">
+        <span>💰 Sem impostos: <b id="tickSem">R$ 0,00</b></span>
+        <span>🧾 Líquido: <b id="tickLiq">R$ 0,00</b></span>
+        <span>📦 Vendas: <b id="tickQtd">0</b></span>
+        <span>🎯 Ticket: <b id="tickTicket">R$ 0,00</b></span>
+        <span>🗺️ Região líder: <b id="tickRegiao">—</b></span>
+        <span>👔 Representante líder: <b id="tickRep">—</b></span>
+        <span>⏰ Follow-ups/Alarmes: <b id="tickFollow">0</b></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="kpis four">
+    <div class="card kpi"><small>💰 Vendas sem impostos</small><strong id="kSem">R$ 0,00</strong><span>período selecionado</span></div>
+    <div class="card kpi"><small>🧾 Valor líquido</small><strong id="kLiq">R$ 0,00</strong><span>período selecionado</span></div>
+    <div class="card kpi"><small>Vendas</small><strong id="kQtd">0</strong><span>registros</span></div>
+    <div class="card kpi"><small>Ticket médio</small><strong id="kTicket">R$ 0,00</strong><span>métrica selecionada</span></div>
+  </div>
+
+  <div class="kpis four">
+    <div class="card kpi"><small>Região líder</small><strong id="kRegiao">—</strong><span id="kRegiaoVal">R$ 0,00</span></div>
+    <div class="card kpi"><small>Representante líder</small><strong id="kRepLider">—</strong><span id="kRepVal">R$ 0,00</span></div>
+    <div class="card kpi"><small>Clientes compradores</small><strong id="kCli">0</strong></div>
+    <div class="card kpi"><small>Follow-ups / alarmes pendentes</small><strong id="kFollow">0</strong></div>
+  </div>
+
+  <div class="chart-grid">
+    <div class="card chart-card"><h3>📅 Evolução das vendas</h3><canvas id="chartEvolucao"></canvas></div>
+    <div class="card chart-card"><h3>🗺️ Faturamento por região</h3><canvas id="chartRegiao"></canvas></div>
+    <div class="card chart-card"><h3>👔 Faturamento por representante</h3><canvas id="chartRep"></canvas></div>
+    <div class="card chart-card"><h3>🥧 Participação por região</h3><canvas id="chartPizza"></canvas></div>
+  </div>
+
+  <div class="grid2">
+    <div class="card"><h3>🏆 Top clientes</h3><div id="topClientes"></div></div>
+    <div class="card"><h3>🎯 Metas dos representantes</h3><div id="repRanking"></div></div>
+  </div>
+</section>
+
+<section id="clientes" class="tab">
+  <div class="toolbar">
+    <input id="buscaCliente" placeholder="Código, cliente, CNPJ, cidade, telefone ou representante...">
+    <select id="filtroDias"><option value="">Todos</option><option value="30">+30 dias</option><option value="60">+60 dias</option><option value="90">+90 dias</option><option value="180">+180 dias</option></select>
+  </div>
+  <div id="clientesList"></div>
+</section>
+
+
+
+<section id="pipeline" class="tab">
+  <div class="card pipeline-toolbar">
+    <div><label>Representante</label><select id="pipeRep"><option value="">Todos</option></select></div>
+    <div><label>Pesquisar</label><input id="pipeBusca" placeholder="Cliente, código, cidade ou telefone..."></div>
+    <div><label>Ordenar</label><select id="pipeSort"><option value="dias">Mais dias sem comprar</option><option value="valor">Maior valor</option><option value="nome">Nome do cliente</option><option value="ultima">Última compra mais recente</option></select></div>
+    <button class="primary" onclick="renderPipeline()">Atualizar pipeline</button>
+  </div>
+
+  <div class="pipeline-kpis">
+    <div class="card mini-kpi"><small>Total de clientes</small><strong id="pipeQtd">0</strong></div>
+    <div class="card mini-kpi"><small>Em Follow-up</small><strong id="pipeFollowQtd">0</strong></div>
+    <div class="card mini-kpi"><small>Em negociação</small><strong id="pipeNegQtd">0</strong></div>
+    <div class="card mini-kpi"><small>Venda concluída</small><strong id="pipeVendaQtd">0</strong></div>
+  </div>
+
+  
+<div class="neg-summary">
+  <div class="card neg-kpi"><small>🤝 Total negociado</small><strong id="negTotalValor">R$ 0,00</strong><span>soma das negociações</span></div>
+  <div class="card neg-kpi"><small>📋 Negociações</small><strong id="negTotalQtd">0</strong><span>clientes em negociação</span></div>
+  <div class="card neg-kpi"><small>🎯 Ticket médio negociado</small><strong id="negTicketMedio">R$ 0,00</strong><span>média por negociação</span></div>
+  <div class="card neg-kpi"><small>👔 Líder em negociação</small><strong id="negRepLider">—</strong><span id="negRepLiderValor">R$ 0,00</span></div>
+  <div class="card neg-kpi"><small>🏆 Líder de vendas do Pipeline</small><strong id="vendaRepLiderPipe">—</strong><span id="vendaRepLiderPipeValor">R$ 0,00</span></div>
+  <div class="card neg-kpi pipeline-sales-kpi">
+    <small>💰 Vendas feitas no Pipeline</small>
+    <strong id="pipelineSalesValue">R$ 0,00</strong>
+    <span id="pipelineSalesCount">0 venda(s) concluída(s)</span>
+  </div>
+  <div class="card neg-kpi">
+    <small>📈 Conversão do Pipeline</small>
+    <strong id="pipelineConversion">0,0%</strong>
+    <span>vendas ÷ clientes trabalhados</span>
+  </div>
+</div>
+<div class="pipeline-help">💡 Segure o cartão e arraste entre as etapas. Todos os clientes importados começam em Contato. <b>Pipeline independente:</b> alterações daqui não mudam os números do Dashboard.</div>
+  <div class="pipeline-fastbar">
+    <button onclick="prevPipelinePage()">◀ Anterior</button>
+    <span id="pipePageInfo">Página 1</span>
+    <button onclick="nextPipelinePage()">Próxima ▶</button>
+    <span class="muted">60 clientes por página para manter o sistema leve.</span>
+  </div>
+
+  <div class="pipeline-board fourcols">
+    <div class="pipe-column" data-stage="Contato">
+      <div class="pipe-head"><span>📞 Contato</span><b id="countContato">0</b></div>
+      <div class="pipe-cards" id="pipeContato"></div>
+    </div>
+
+    <div class="pipe-column" data-stage="Follow-up">
+      <div class="pipe-head"><span>🗂️ Follow-up</span><b id="countFollow">0</b></div>
+      <div class="pipe-cards" id="pipeFollow"></div>
+    </div>
+
+    <div class="pipe-column" data-stage="Negociação">
+      <div class="pipe-head"><span>🤝 Negociação</span><b id="countNegociacao">0</b></div>
+      <div class="pipe-cards" id="pipeNegociacao"></div>
+    </div>
+
+    <div class="pipe-column" data-stage="Venda">
+      <div class="pipe-head"><span>💰 Venda concluída</span><b id="countVenda">0</b></div>
+      <div class="pipe-cards" id="pipeVenda"></div>
+    </div>
+  </div>
+</section>
+
+<section id="followups" class="tab">
+<div class="card activity-top">
+<div class="activity-title-row"><div><h3>📞 Atividades / Follow-ups / Alarmes</h3><p class="muted">Gestão completa das atividades comerciais dos clientes importados.</p></div><button class="primary" onclick="openActivityNew()">+ Nova atividade</button></div>
+<div class="activity-type-tabs">
+<button class="act-type active" onclick="setActivityTypeFilter(this,'')">Tudo</button>
+<button class="act-type" onclick="setActivityTypeFilter(this,'Ligação')">📞 Ligação</button>
+<button class="act-type" onclick="setActivityTypeFilter(this,'WhatsApp')">💬 WhatsApp</button>
+<button class="act-type" onclick="setActivityTypeFilter(this,'E-mail')">📧 E-mail</button>
+<button class="act-type" onclick="setActivityTypeFilter(this,'Reunião')">🤝 Reunião</button>
+<button class="act-type" onclick="setActivityTypeFilter(this,'Tarefa')">📋 Tarefa</button>
+</div>
+<div class="activity-period-tabs">
+<button class="period-tab active" onclick="setActivityPeriod(this,'open')">Para fazer</button>
+<button class="period-tab" onclick="setActivityPeriod(this,'overdue')">Vencido</button>
+<button class="period-tab" onclick="setActivityPeriod(this,'today')">Hoje</button>
+<button class="period-tab" onclick="setActivityPeriod(this,'tomorrow')">Amanhã</button>
+<button class="period-tab" onclick="setActivityPeriod(this,'week')">Esta semana</button>
+<button class="period-tab" onclick="setActivityPeriod(this,'nextweek')">Próxima semana</button>
+<button class="period-tab" onclick="setActivityPeriod(this,'all')">Tudo</button>
+</div>
+<div class="activity-filters integrated">
+<div><label>Representante</label><select id="followRep"><option value="">Todos os representantes</option></select></div>
+<div><label>Etapa do Pipeline</label><select id="activityStage"><option value="">Todas as etapas</option><option>Contato</option><option>Follow-up</option><option>Negociação</option><option value="Venda">Venda concluída</option></select></div>
+<div><label>Buscar</label><input id="followClienteBusca" placeholder="Cliente, código, assunto, telefone, cidade..."></div>
+<div><label>Prioridade</label><select id="activityPriority"><option value="">Todas</option><option>Normal</option><option>Importante</option><option>Urgente</option></select></div>
+<div><label>Status</label><select id="statusFollow"><option value="">Todos</option><option value="pendente">Pendente</option><option value="concluido">Concluído</option></select></div>
+</div>
+</div>
+<div class="activity-kpis six">
+<div class="card kpi"><small>Para fazer</small><strong id="fQtdPend">0</strong></div>
+<div class="card kpi"><small>Vencidos</small><strong id="fQtdVenc">0</strong></div>
+<div class="card kpi"><small>Hoje</small><strong id="fQtdHoje">0</strong></div>
+<div class="card kpi"><small>Em Follow-up</small><strong id="fQtdStageFollow">0</strong></div>
+<div class="card kpi"><small>Em negociação</small><strong id="fQtdStageNeg">0</strong></div>
+<div class="card kpi"><small>Concluídos</small><strong id="fQtdConcl">0</strong></div>
+</div>
+<div class="card activity-table-card">
+<div class="activity-table-scroll"><table class="activity-table"><thead><tr>
+<th>Concluído</th><th>Tipo</th><th>Assunto</th><th>Cliente</th><th>Representante</th><th>Pipeline</th><th>Prioridade</th><th>Resultado</th><th>Telefone</th><th>Cidade/UF</th><th>Conversa / Próximo retorno</th><th>Status</th><th>Ações</th>
+</tr></thead><tbody id="activityBody"></tbody></table></div>
+<div class="follow-pagination"><button onclick="prevFollowPage()">◀ Anterior</button><span id="followPageInfo">Página 1</span><button onclick="nextFollowPage()">Próxima ▶</button></div>
+</div>
+</section>
+
+<section id="apuracao" class="tab">
+  <div class="toolbar">
+    <input id="buscaApuracao" placeholder="Representante, nome ou supervisor...">
+    <select id="filtroSupervisor"><option value="">Todos os supervisores</option></select>
+    <select id="filtroAtingido"><option value="">Todos</option><option value="Sim">Meta atingida</option><option value="Não">Meta não atingida</option></select>
+  </div>
+
+  <div class="kpis four">
+    <div class="card kpi"><small>Meta total</small><strong id="aMetaTotal">R$ 0,00</strong></div>
+    <div class="card kpi"><small>Valor atingido</small><strong id="aAtingidoTotal">R$ 0,00</strong></div>
+    <div class="card kpi"><small>Falta para meta</small><strong id="aFaltaTotal">R$ 0,00</strong></div>
+    <div class="card kpi"><small>Representantes na meta</small><strong id="aQtdMeta">0</strong><span id="aPctMeta">0%</span></div>
+  </div>
+
+  <div class="card table-card">
+    <h3>👔 Resumo por Supervisor</h3>
+    <div class="table-scroll"><table class="data-table"><thead><tr><th>Supervisor</th><th>Representantes</th><th>Meta Total</th><th>Valor Atingido</th><th>Falta</th><th>%</th><th>Status</th></tr></thead><tbody id="supervisorBody"></tbody><tfoot id="supervisorFoot"></tfoot></table></div>
+  </div>
+
+  <div class="card table-card">
+    <h3>📋 Detalhamento por Representante</h3>
+    <div class="table-scroll"><table class="data-table"><thead><tr><th>Atingido</th><th>Nome</th><th>Código</th><th>Meta</th><th>Vr Atingido</th><th>Falta</th><th>%</th><th>Supervisor</th></tr></thead><tbody id="apuracaoBody"></tbody></table></div>
+  </div>
+</section>
+
+<section id="excel" class="tab">
+  <div class="card intro storage-ok"><b>💾 IndexedDB ativo.</b> Base principal salva no navegador.</div>
+
+  <div class="grid2">
+    <div class="card import-card">
+      <h3>👥 TODOS OS CLIENTES.xls</h3>
+      <p class="muted">Importa a base completa de clientes e alimenta Clientes, Pipeline e Follow-ups.</p>
+      <input type="file" id="clientesFile" accept=".xls,.xlsx">
+      <button class="primary" onclick="importClientes()">Importar clientes</button>
+      <div id="clientesMsg" class="msg"></div>
+    </div>
+
+    <div class="card import-card">
+      <h3>💰 DIGITAÇÃO DE ORDEM.xls → Vendas</h3>
+      <p class="muted">O arquivo é tratado apenas como fonte de vendas. Não existe módulo Pedidos nesta versão.</p>
+      <input type="file" id="vendasFile" accept=".xls,.xlsx">
+      <button class="primary" onclick="importVendas()">Importar vendas</button>
+      <div id="vendasMsg" class="msg"></div>
+    </div>
+  </div>
+
+  <div class="card intro">
+    <h3>📋 APURAÇÃO DE VENDAS.xls</h3>
+    <input type="file" id="apuracaoFile" accept=".xls,.xlsx">
+    <button class="primary" onclick="importApuracao()">Importar apuração</button>
+    <div id="apuracaoMsg" class="msg"></div>
+  </div>
+
+  <div class="card intro">
+    <h3>💾 Backup e exportação</h3>
+    <button class="primary" onclick="backupDados()">💾 Fazer backup</button>
+    <button onclick="$('restoreFile').click()">♻️ Importar backup inicial</button>
+    <input type="file" id="restoreFile" accept=".json" style="display:none" onchange="restaurarBackup(event)">
+    <button onclick="exportExcel()">📗 Exportar Excel</button>
+    <button class="deletebtn" disabled title="Desativado para proteger o banco compartilhado">🗑️ Limpar tudo</button>
+  </div>
+</section>
+</main>
+</div>
+
+<div class="modal" id="followModal"><div class="modalbox wide-modal">
+<button class="x" onclick="closeModal('followModal')">×</button>
+<h3 id="followModalTitle">📞 Follow-up / Próximo retorno</h3>
+<input type="hidden" id="fId"><input type="hidden" id="fClienteId">
+<div id="fClienteResumo" class="selected-box"></div>
+<div class="formgrid">
+<label>Tipo de atividade<select id="fTipo"><option>Ligação</option><option>WhatsApp</option><option>E-mail</option><option>Reunião</option><option>Tarefa</option></select></label>
+<label>Prioridade<select id="fPrioridade"><option>Normal</option><option>Importante</option><option>Urgente</option></select></label>
+</div>
+<div class="formgrid three-fields">
+<label>Data do início da conversa
+<input id="fInicioData" type="date">
+</label>
+<label>Data do alerta / próximo retorno
+<input id="fData" type="date">
+</label>
+<label>Horário do alerta
+<input id="fHora" type="time" value="09:00">
+</label>
+</div>
+<label>Assunto / atividade
+<select id="fAssunto" onchange="onAssuntoChange()">
+  <option value="">Selecione o assunto...</option>
+  <optgroup label="Contato e retorno">
+    <option>Ligar para o cliente</option>
+    <option>Retornar ligação</option>
+    <option>Cobrar retorno do cliente</option>
+    <option>Cliente não atendeu</option>
+    <option>Tentar novo contato</option>
+    <option>Confirmar interesse do cliente</option>
+    <option>Agendar nova conversa</option>
+    <option>Marcar reunião</option>
+    <option>Confirmar reunião</option>
+  </optgroup>
+  <optgroup label="Catálogo e produtos">
+    <option>Enviar catálogo</option>
+    <option>Apresentar catálogo</option>
+    <option>Apresentar lançamentos</option>
+    <option>Apresentar novos produtos</option>
+    <option>Enviar fotos dos produtos</option>
+    <option>Enviar ficha técnica</option>
+    <option>Enviar amostra</option>
+    <option>Apresentar linha infantil</option>
+    <option>Apresentar linha de utilidades</option>
+    <option>Apresentar produtos em promoção</option>
+  </optgroup>
+  <optgroup label="Preços e condições">
+    <option>Enviar tabela de preços</option>
+    <option>Atualizar tabela de preços</option>
+    <option>Negociar preço</option>
+    <option>Negociar desconto</option>
+    <option>Negociar condição de pagamento</option>
+    <option>Negociar prazo de pagamento</option>
+    <option>Negociar frete</option>
+    <option>Revisar condição comercial</option>
+    <option>Enviar condição comercial</option>
+  </optgroup>
+  <optgroup label="Pedido e compra">
+    <option>Confirmar pedido</option>
+    <option>Verificar intenção de compra</option>
+    <option>Verificar reposição</option>
+    <option>Solicitar pedido</option>
+    <option>Acompanhar pedido</option>
+    <option>Confirmar itens do pedido</option>
+    <option>Confirmar quantidade</option>
+    <option>Confirmar ordem de compra</option>
+    <option>Cobrar ordem de compra</option>
+    <option>Aguardar ordem de compra</option>
+  </optgroup>
+  <optgroup label="Negociação">
+    <option>Iniciar negociação</option>
+    <option>Acompanhar negociação</option>
+    <option>Cobrar retorno da negociação</option>
+    <option>Confirmar aprovação da negociação</option>
+    <option>Enviar proposta comercial</option>
+    <option>Reenviar proposta comercial</option>
+    <option>Ajustar proposta comercial</option>
+    <option>Confirmar fechamento</option>
+    <option>Negociação em análise</option>
+  </optgroup>
+  <optgroup label="Financeiro">
+    <option>Confirmar pagamento</option>
+    <option>Cobrar pagamento</option>
+    <option>Enviar dados para pagamento</option>
+    <option>Confirmar prazo financeiro</option>
+    <option>Verificar pendência financeira</option>
+    <option>Solicitar liberação financeira</option>
+  </optgroup>
+  <optgroup label="Pós-venda">
+    <option>Realizar pós-venda</option>
+    <option>Confirmar recebimento</option>
+    <option>Verificar satisfação do cliente</option>
+    <option>Verificar necessidade de reposição</option>
+    <option>Solicitar feedback</option>
+    <option>Resolver pendência do cliente</option>
+    <option>Acompanhar atendimento</option>
+  </optgroup>
+  <optgroup label="Clientes inativos">
+    <option>Cliente sem comprar</option>
+    <option>Reativar cliente</option>
+    <option>Entender motivo da inatividade</option>
+    <option>Apresentar condição para reativação</option>
+    <option>Oferecer reposição</option>
+  </optgroup>
+  <optgroup label="Outros">
+    <option>Enviar WhatsApp</option>
+    <option>Enviar e-mail</option>
+    <option>Enviar documentação</option>
+    <option>Atualizar cadastro</option>
+    <option>Confirmar dados cadastrais</option>
+    <option value="__OUTRO__">Outro / Personalizado</option>
+  </optgroup>
+</select>
+</label>
+
+<label id="fTextoWrap" class="hidden-custom">Assunto personalizado
+<textarea id="fTexto" placeholder="Digite apenas se escolher Outro / Personalizado"></textarea>
+</label>
+<div class="formgrid">
+<label>Resultado<select id="fResultado"><option value="">Sem resultado</option><option>Cliente não atendeu</option><option>Contato realizado</option><option>Catálogo enviado</option><option>Aguardando retorno</option><option>Negociação aberta</option><option>Venda realizada</option><option>Sem interesse</option></select></label>
+<label>Status<select id="fStatusNovo"><option value="pendente">Pendente</option><option value="concluido">Concluído</option></select></label>
+</div>
+<div class="alarm-info">🗓️ A primeira data registra quando a conversa aconteceu. A segunda data + horário definem quando você quer ser lembrado de falar com o cliente novamente.</div>
+<button class="primary" onclick="saveFollow()">Salvar atividade</button>
+</div></div>
+
+<div class="modal" id="whatsModal"><div class="modalbox">
+<button class="x" onclick="closeModal('whatsModal')">×</button>
+<h3>💬 WhatsApp</h3>
+<input type="hidden" id="wClienteId">
+<div id="wClienteNome" class="selected-box"></div>
+<label>Telefone<select id="wTelefone"></select></label>
+<label>Modelo<select id="wModelo" onchange="aplicarModeloWhats()"><option value="follow">Follow-up</option><option value="parado">Cliente sem comprar</option><option value="catalogo">Catálogo</option><option value="personalizada">Personalizada</option></select></label>
+<label>Mensagem<textarea id="wMsg"></textarea></label>
+<button class="whatsapp" onclick="abrirWhatsApp()">💬 Abrir WhatsApp</button>
+</div></div>
+
+
+<div class="modal" id="negModal"><div class="modalbox wide-modal">
+<button class="x" onclick="closeModal('negModal')">×</button>
+<h3>🤝 Dados da negociação</h3>
+<input type="hidden" id="negClienteId">
+<div id="negClienteResumo" class="selected-box"></div>
+<div class="formgrid">
+<label>Valor negociado<input id="negValor" type="number" step="0.01" min="0" placeholder="0,00"></label>
+<label>Ordem de compra<input id="negOC" placeholder="Ex.: OC-2026-0158"></label>
+</div>
+<div class="formgrid">
+<label>Previsão de fechamento<input id="negPrevisao" type="date"></label>
+<label>Status da negociação<select id="negStatus"><option>Em negociação</option><option>Aguardando aprovação</option><option>Aguardando ordem de compra</option><option>Fechamento provável</option><option>Perdida</option></select></label>
+</div>
+<label>Observação da negociação<textarea id="negObs" placeholder="Ex.: Cliente aguardando aprovação..."></textarea></label>
+<button class="primary" onclick="saveNegotiation()">Salvar negociação</button>
+</div></div>
+
+<div id="alarmToast" class="alarm-toast">
+<div class="alarm-toast-head"><b>🔔 Retorno de follow-up</b><button onclick="closeAlarmToast()">×</button></div>
+<div id="alarmToastBody"></div>
+<div class="alarm-toast-actions"><button class="primary" id="alarmToastOpenBtn">Abrir cliente</button><button onclick="closeAlarmToast()">Fechar</button></div>
+</div>
+
+<script src="supabase-config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="multiuser.js"></script>
+<script src="app.js"></script>
 </body>
-
 </html>

@@ -1,0 +1,9 @@
+VALIDAÇÃO FINAL
+JavaScript: OK
+IDs HTML únicos: 119
+Referências JS a IDs: 93
+IDs ausentes: 0
+Funções de botões verificadas: 23
+Funções ausentes: 0
+Destinos de menu: 9
+Destinos ausentes: 0
